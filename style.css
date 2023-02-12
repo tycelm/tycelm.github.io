@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+#desc{
+    font-size: 25px;
+}
+
+html, body {
+    margin: 0; 
+    padding: 0;
+}
