@@ -2,13 +2,15 @@
 <html>
 <head>
     <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css" style="height: 100%;"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" style="height: 100%;"/>
+    <link rel="stylesheet" type="text/css" href="css/scroll.css" style="height: 100%;"/>
+    <script src="scripts/page_manager.js"></script>
 </head>
 <body>
     <div id="container">
         <div> <!--where all the text is--> 
-            <img src="homepage.jpg" alt="Background" style="width: 100%;">
-            <h2 id="programming_page">Programming</h2>
+            <img src="assets/homepage.jpg" alt="Background" style="width: 100%;">
+            <input class="prog" type="button" value="Programming" onclick="change_programming()"/>
             <h2 id="art_page">Art</h2>
         </div>
         
@@ -18,8 +20,6 @@
             <p id="desc">All I know is how to centre text</p>
         </div>
     </div>
-    <script src="page_manager.js"></script>
-    <input type="button" value="Programming" onclick="change_programming()"/>
 </body>
-<script src="parallax.js"></script>
+<script src="scripts/parallax.js"></script>
 </html>
