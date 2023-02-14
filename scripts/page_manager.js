@@ -1,3 +1,3 @@
-function change_programming(){
-    window.location.href = "programming.html";
+function change_page(name){
+    window.location.href = name;
 }
