@@ -1,0 +1,62 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Varela Round', Helvetica, sans-serif;
+    background-color: rgb(36, 36, 36);
+}
+
+#container {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    text-align: right;
+}
+
+.tools{
+    position: absolute;
+    top: 60%;
+    left: 3%;
+}
+
+i{
+    font-size: 100px;
+}
+
+#projects {
+    position: absolute;
+    color: white;
+    top: 120%;
+    font-size: 20px;
+    left: 3%;
+}
+
+.project {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.p_title{
+    font-size: 70px;
+}
+
+.p_left {
+    width: 40%;
+    float: left;
+}
+
+.p_right {
+    width: 50%;
+    position: absolute;
+    right: 3%;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}

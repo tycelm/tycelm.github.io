@@ -2,24 +2,26 @@
 <html>
 <head>
     <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" style="height: 100%;"/>
-    <link rel="stylesheet" type="text/css" href="/css/scroll.css" style="height: 100%;"/>
-    <script src="/scripts/page_manager.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" style="height: 100%;"/>
+    <link rel="stylesheet" type="text/css" href="css/scroll.css" style="height: 100%;"/>
+    <script src="scripts/page_manager.js"></script>
 </head>
 <body>
     <div id="container">
+        <div class="title">
+            <h1>Hey there, my name is Joshua 😼</h1>
+            <div id="desc">
+                <!--Click to change word-->
+                <p>Click to learn more about my:</p>
+            </div>
+        </div>
+        
         <div> <!--where all the text is--> 
-            <img src="/assets/homepage.jpg" alt="Background" style="width: 100%;">
+            <img src="assets/homepage.jpg" alt="Background" style="width: 100%;">
             <input class="prog" type="button" value="Programming" onclick="change_page('programming.html')"/>
             <input class="art" type="button" value="Art" onclick="change_page('art.html')"/>
         </div>
-        
-        <div class="title">
-            <h1>Hey there, my name is Joshua</h1>
-            <p id="desc">This page is a work in progress</p>
-            <p id="desc">All I know is how to centre text</p>
-        </div>
     </div>
 </body>
-<script src="/scripts/parallax.js"></script>
+<script src="scripts/parallax.js"></script>
 </html>
