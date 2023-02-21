@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/p_style.css" style="height: 100%;"/>
         <link rel="stylesheet" type="text/css" href="css/scroll.css" style="height: 100%;"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
         <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
         <title>Programming</title>
     </head>
     <body>
+        <div class="navbar">
+            <input type="button" onClick="document.getElementById('project').scrollIntoView();" />
+            <input type="button" onClick="document.getElementById('experiences').scrollIntoView();" />
+            <input type="button" onClick="document.getElementById('courses').scrollIntoView();" />
+            <input type="button" onClick="document.getElementById('top').scrollIntoView();" />
+        </div>
+        <a id="top"></a>
         <div id="container">
             <div class="title">
                 <p>I am an aspiring software developer and technical artist</p> 
@@ -33,18 +44,18 @@
             </div>
         </div>
         <div id="content">
-            <h1 class="project">Projects:</h1>
+            <h1 class="project" id="project">Projects:</h1>
             <p>&nbsp;</p>
             <div>
                 <div class="p_left">
                     <h2 class="p_title">Desktop Maid</h2>
                     <p>A virtual desktop pet</p>
-                    <p><a href="https://github.com/tycelm/desktop_maid"> Link to Github repository</a></p>
+                    <p><a href="https://github.com/tycelm/desktop_maid" target="_blank"> Link to Github repository</a></p>
                     <p>• Created a program from scratch in Python utilizing tkinter and 
                         self-animated assets that moves around your screen</p>
                     <p>• Automatically joins Zoom classes based on your schedule</p>
                     <p>• Over 300 downloads on itch.io, 
-                        <a href="https://tycelm.itch.io/desktop-maid"> check it out here!</a></p>
+                        <a href="https://tycelm.itch.io/desktop-maid" target="_blank"> check it out here!</a></p>
                     <hr>
                     <p>Backstory:</p>
                     <p>     
@@ -54,7 +65,7 @@
                         how the links of our classes were hidden in the most obscure places. And thus, I repurposed
                         this program to the tool it is today.
                     </p>
-                    <a href="https://tycelm.itch.io/desktop-maid"></a>
+                    <a href="https://tycelm.itch.io/desktop-maid" target="_blank"></a>
                 </div>
                 <div class="p_right">
                     <p>&nbsp;</p>
@@ -87,13 +98,13 @@
                 <div class="p_left">
                     <h2 class="p_title">FALL N' BRAWL</h2>
                     <p>An Infinite Auto-generated Roguelike</p>
-                    <p><a href="https://github.com/bw55555/RuinedTowerPlatformer"> 
+                    <p><a href="https://github.com/bw55555/RuinedTowerPlatformer" target="_blank"> 
                         Link to Github repository</a></p>
                         <p>• Organized 4 people to create a game with Unity within 36 hours</p>
                         <p>• Programmed player movement, item shop, and inventory system</p>
                         <p>• Learned pixel art and animation within the given timeframe</p>
                         <p>• We only got 4th place but you should still 
-                            <a href="https://fightiest-fighter.itch.io/fall-n-brawl"> check it out here!</a></p>
+                            <a href="https://fightiest-fighter.itch.io/fall-n-brawl" target="_blank"> check it out here!</a></p>
                         <hr>
                         <p>Backstory:</p>
                         <p> This was a submission for one of the many events from the 
@@ -126,7 +137,7 @@
                 <div class="p_left">
                     <h2 class="p_title">Room 114</h2>
                     <p>A UofT based Management Game</p>
-                    <p><a href="https://github.com/CSC207-2022F-UofT/course-project-group-114"> 
+                    <p><a href="https://github.com/CSC207-2022F-UofT/course-project-group-114" target="_blank"> 
                         Link to Github repository</a></p>
                     <p>
                         • A final project of my Software Design class (CSC207)
@@ -161,11 +172,11 @@
                     <p>&nbsp;</p>
                     <h2 class="p_title">Don't Knock It Down Till You've Tried It</h2>
                     <p>A bullet hell style rhythm game</p>
-                    <p><a href="https://github.com/tycelm/galaxy-bullet-hell"> Link to Github repository</a></p>
-                    <p>• A three part game based on the characters and music made by <a href="https://www.youtube.com/c/Gooseworx">Gooseworx</a></p>
+                    <p><a href="https://github.com/tycelm/galaxy-bullet-hell" target="_blank"> Link to Github repository</a></p>
+                    <p>• A three part game based on the characters and music made by <a href="https://www.youtube.com/c/Gooseworx" target="_blank">Gooseworx</a></p>
                     <p>• Fully scripted levels designed to fit the music</p>
                     <p>• Only one of the three levels exist at the moment,  
-                        <a href="https://tycelm.itch.io/dont-knock-it-down-till-youve-tried-it"> 
+                        <a href="https://tycelm.itch.io/dont-knock-it-down-till-youve-tried-it" target="_blank"> 
                             check it out here!</a></p>
                     <hr>
                     <p>Backstory:</p>
@@ -201,7 +212,7 @@
                         <p>&nbsp;</p>
                         <h2 class="p_title">Work Experience</h2>
                         <p>A side scrolling horror game</p>
-                        <p><a href="https://github.com/tycelm/Work-Experience"> Link to Github repository</a></p>
+                        <p><a href="https://github.com/tycelm/Work-Experience" target="_blank"> Link to Github repository</a></p>
                         <p>• A horror game made on Unity focused on hiding and sneaking around</p>
                         <p>• A fully functioning dynamic enemy that has features such as line of sight and alternating states</p>
                         <hr>
@@ -225,7 +236,7 @@
                     <div class="clear p_left">
                         <h2 class="p_title">Selpants</h2>
                         <p>A 2D point and click adventure game</p>
-                        <p><a href="https://github.com/tycelm/SelPants"> Link to Github repository</a></p>
+                        <p><a href="https://github.com/tycelm/SelPants" target="_blank"> Link to Github repository</a></p>
                         <p>• Made on Unity</p>
                         <p>• Story revolves around the bizzare day-to-day of a minimum wage worker working retail</p>
                         <hr>
@@ -260,31 +271,90 @@
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
-                <h1 class="project">Experience:</h1>
-                <h2 class="p_title">Room 114</h2>
-                    <p>A UofT based Management Game</p>
-                    <p><a href="https://github.com/CSC207-2022F-UofT/course-project-group-114"> 
-                        Link to Github repository</a></p>
-                    <p>
-                        • A final project of my Software Design class (CSC207)
-                    </p>
-                    <p>
-                        • Organized 7 people to create a game from scratch in Java utilizing 
-                        Java Swing for the UI</p>
-                    <p>
-                        • Worked on the full stack for the login, encryption, and 
-                        authentication system
-                    </p>
-                    <p>• Responsible for all of the art, design, and animation</p>
-                    <hr>
-                    <p>Backstory:</p>
-                        <p> Although having a background of game development, most of my projects 
-                            were done with Unity. So this was my first time builting a game 
-                            completely from scratch. Although we didn't use something like React,
-                             we were still able to walk away with solid knowledge of Clean Architecture
-                             for software development. Such as using interfaces to maintain independancy 
-                             and the different layered design patterns.
-                        </p>  
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <h1 class="project" id="experiences">Experience:</h1>
+                <h2 class="p_title">UofT Game Design and Development Club</h2>
+                <p>September 2021—Present</p>
+                <p>
+                    • Working in two different game design groups as both artist and programmer
+                </p>
+                <p>
+                    • Collaborated with more experienced people in the field during four 
+                    month periods to put games together with Unity
+                </p>
+                <p>• Most of the projects were done with Unity</p>
+
+                <p>&nbsp;</p>
+
+                <h2 class="p_title">Freelance Digital Artist</h2>
+                <p>March 2018—Present</p>
+                <p>• For more info, return to the homepage with the button on the upper right to access my art portfolio!</p>
+                <p>
+                    • Created illustrations, as well as virtual 2.5d and 3d puppets for over 20 influencers
+                </p>
+                <p>
+                    • Built a brand online (5.6k+ subscribers and 1M+ views on YouTube)
+                </p>
+                <p>• Responsible for the school-wide agenda's cover design as well as newspaper illustrations during high 
+                    school
+                </p>
+
+                <p>&nbsp;</p>
+
+                <h2 class="p_title">Shinta Japanese BBQ Busser</h2>
+                <p>July 2021—September 2021</p>
+                <p>• Communicated with coworkers in three different languages 
+                    (Mandarin, Cantonese, and English) to serve customers
+                </p>
+                <p>
+                    • Responsible for answering requests/inquiries, deliviering food, 
+                    keeping restaurant cleanliness, and translating
+                </p>
+            </div>
+
+
+            <!--Coursework-->
+            <div class="clear">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <h1 class="project" id="courses">Relevant Courses I've Taken:</h1>
+                    <ul>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/csc263h1" target="_blank"> CSC263: Data Structures and Analysis</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/csc207h1" target="_blank"> CSC207: Software Design</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/csc236h1" target="_blank"> CSC236: Introduction to the Theory of Computation</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/csc209h1" target="_blank"> CSC209: Software Tools and Systems Programming</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/csc258h1" target="_blank"> CSC258: Computer Organization</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/mat235y1" target="_blank"> MAT235: Multivariable Calculus</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/sta247h1" target="_blank"> STA247: Probability with Computer Applications</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/csc300h1" target="_blank"> CSC300: Computers and Society</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/csc110y1" target="_blank"> CSC110: Foundations of Computer Science I</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/csc111h1" target="_blank"> CSC111: Foundations of Computer Science II</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/mat223h1" target="_blank"> MAT223: Linear Algebra I</a></li>
+                        <li><a href="https://artsci.calendar.utoronto.ca/course/mat137y1" target="_blank"> MAT137: Calculus with Proofs</a></li>
+                      </ul>
+            </div>
+        </div>
+        <!--Links-->
+        <div class="contact">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div>
+                <h1 class="project" id="contact">Socials:</h1>
+                <a href="https://github.com/tycelm"  target="_blank">
+                    <i class="devicon-github-original"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ming-hin-joshua-li-99a0a0231/"  target="_blank">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
             </div>
         </div>
     </body>
