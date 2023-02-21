@@ -28,7 +28,7 @@ i{
     font-size: 100px;
 }
 
-#projects {
+#content {
     position: absolute;
     color: white;
     top: 120%;
@@ -52,8 +52,7 @@ i{
 
 .p_right {
     width: 50%;
-    position: absolute;
-    right: 3%;
+
     float: right;
 }
 
@@ -70,4 +69,25 @@ i{
 
 a {
     color: rgb(133, 57, 204);
+}
+
+.scrapped {
+    font-size: 70px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    cursor: pointer;
+    font-family: 'Varela Round', Helvetica, sans-serif;
+}
+
+.scrapped:hover{
+    color: rgb(202, 202, 202);
+}
+
+.scrapped_content {
+    background-color: rgb(26, 26, 26);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
