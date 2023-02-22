@@ -11,6 +11,6 @@ html, body {
     color: white;
 }
 
-.desc{
-    font-size: 60px;
+#desc{
+    font-size: 20px;
 }
