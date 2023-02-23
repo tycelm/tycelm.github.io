@@ -12,17 +12,32 @@
         <title>Programming</title>
     </head>
     <body>
-        <div class="navbar">
-            <input type="button" onClick="document.getElementById('project').scrollIntoView();" />
-            <input type="button" onClick="document.getElementById('experiences').scrollIntoView();" />
-            <input type="button" onClick="document.getElementById('courses').scrollIntoView();" />
-            <input type="button" onClick="document.getElementById('contact').scrollIntoView();" />
-            <input type="button" onClick="document.getElementById('top').scrollIntoView();" />
-        </div>
         <a id="top"></a>
+        <div class="animation">
+            <img class="bg" id="anim" src="assets/prog_in.gif" alt="intro anim">
+            <div class="remove">
+                <input class="skip p_button" type="button" value="Projects" onClick="document.getElementById('project').scrollIntoView();" />
+                <input class="skip e_button" type="button" value="Experiences" onClick="document.getElementById('experiences').scrollIntoView();" />
+                <input class="skip c_button" type="button" value="Taken Courses" onClick="document.getElementById('courses').scrollIntoView();" />
+                <input class="skip con_button" type="button" value="Contacts" onClick="document.getElementById('contact').scrollIntoView();" />
+                <input class="skip x_button" type="button" value="Exit" onClick="back()" />
+            </div>
+        </div>
+
+        <div class="header remove">
+            <h1 style="font-size: 100px;">Welcome!</h1>
+            <hr>
+            <p style="font-size: 50px;">Scroll to learn more</p>
+            <p>or</p>
+            <p>Click to skip to my:</p>
+        </div>
+        
+        <div class="navbar">
+            <input class="return remove" type="button" value="Return to Menu" onClick="document.getElementById('top').scrollIntoView();"/>
+        </div>
         <div id="container">
             <div class="title">
-                <p>I am an aspiring software developer and technical artist</p> 
+                <p>I am an aspiring software developer, game developer, web developer and technical artist</p> 
                 <p>currently studying as a CS Specialist at the University of Toronto!</p>
             </div>
 
@@ -290,7 +305,7 @@
 
                 <h2 class="p_title">Freelance Digital Artist</h2>
                 <p>March 2018—Present</p>
-                <p>• For more info, return to the homepage with the button on the upper right to access my art portfolio!</p>
+                <p>• For more info, return to the Menu then exit back to the room to access my art portfolio!</p>
                 <p>
                     • Created illustrations, as well as virtual 2.5d and 3d puppets for over 20 influencers
                 </p>
