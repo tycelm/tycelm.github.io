@@ -9,6 +9,7 @@ html, body {
     position: relative;
     text-align: center;
     color: white;
+    user-select: none;
 }
 
 .title{
@@ -58,7 +59,7 @@ html, body {
     color: rgb(114, 175, 223);
 }
 
-.bg {
+#bg {
     margin: auto;
     width: 95%; 
     height: 100%; 
