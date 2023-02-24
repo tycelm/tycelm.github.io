@@ -5,6 +5,7 @@ html, body {
     font-family: 'Varela Round', Helvetica, sans-serif;
     background-color: rgb(36, 36, 36);
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 .animation {
@@ -44,7 +45,6 @@ html, body {
     border: none;
     color: rgb(243, 231, 216);
     background-color: transparent;
-    z-index: 50;
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 40px;
