@@ -5,12 +5,37 @@ html, body {
     background-color: rgb(34, 34, 34);
 }
 
+@keyframes in {
+    00% {top:100%; opacity: 0;}
+    80% {top:100%; opacity: 0;}
+    100% {opacity: 1;} 
+  }
+
 #container {
     position: relative;
     text-align: center;
     color: white;
+    user-select: none;
+}
+
+.bg {
+    margin: auto;
+    width: 95%; 
+    height: 100%; 
+    object-fit: cover;
+    background-color: rgb(36, 36, 36);
+} 
+
+.title{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    animation-name: in;
+    animation-duration: 13s;
 }
 
 #desc{
-    font-size: 20px;
+    font-size: 30px;
 }
