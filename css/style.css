@@ -45,9 +45,9 @@ html, body {
 .art{
     border: none;
     background-color: transparent;
-    color: rgb(128, 230, 255);
+    color: rgb(221, 255, 128);
     position: absolute;
-    top: 40%;
+    top: 43%;
     left: 71%;
     transform: translate(-50%, -50%);
     font-size: 100px;
@@ -56,7 +56,7 @@ html, body {
 }
 
 .art:hover{
-    color: rgb(114, 175, 223);
+    color: rgb(157, 197, 98);
 }
 
 #bg {

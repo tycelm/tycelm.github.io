@@ -31,7 +31,7 @@ function back(){
         remove[j].remove();
     }
 
-    var delayInMilliseconds = 4000; // 4 seconds
+    var delayInMilliseconds = 2000; // 4 seconds
 
     setTimeout(function() {
         window.location.href = 'index.html'
