@@ -16,8 +16,8 @@ html, body {
 
 .bg {
     margin: auto;
-    width: 95%; 
-    height: 100%; 
+    width: 100vw; 
+    height: 100vh; 
     object-fit: cover;
     background-color: rgb(36, 36, 36);
 } 
