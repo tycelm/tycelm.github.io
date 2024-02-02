@@ -40,7 +40,8 @@ html, body {
 }
 
 .prog:hover{
-    color: rgb(95, 212, 65);
+    /* color: rgb(95, 212, 65); */
+    font-weight: bold;
 }
 
 .art{

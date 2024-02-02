@@ -79,8 +79,78 @@ html, body {
     left: 3%;
 }
 
-.contact{
+.content {
+    position: absolute;
+    color: rgb(243, 231, 216);
     top: 220%;
+    font-size: 20px;
+    left: 3%;
+    right: 3%;
+}
+
+#Illustrations {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 4px; */
+}
+  
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+}
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 50px;
+    transition: 0.3s;
+    color: inherit;
+    font-family: inherit;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #271d29;
+    font-weight: bold;
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #130e13;
+    font-weight: bold;
+}
+  
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: #130e13;
+}
+
+.contact{
     color: rgb(243, 231, 216);
     /* background-color: #38243a; */
     text-align: center;

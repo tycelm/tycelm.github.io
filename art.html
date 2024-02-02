@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="css/scroll.css" style="height: 100%;"/>
         <script src="https://kit.fontawesome.com/001b83998f.js" crossorigin="anonymous"></script>
         <script src="scripts/page_manager.js"></script>
+        <script src="scripts/tab_manager.js"></script>
         <title>Art</title> 
     </head>
     <body>
@@ -28,13 +29,79 @@
             </div>
     
             <div class="tools">
-                <p>My main tools are Clip Studio Paint, Blender, Unity, and Live2D</p>
+                <p>My main tools are Clip Studio Paint, Blender, Unity, Vroid, and Live2D</p>
             </div>
         </div>
 
-        <div>
+        <div class="content">
+            <!-- Links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'art')" id="defaultOpen">Illustrations</button>
+                <button class="tablinks" onclick="openTab(event, 'animation')">Animations</button>
+                <button class="tablinks" onclick="openTab(event, 'models')">Models</button>
+                <button class="tablinks" onclick="openTab(event, 'inspirations')">Inspirations</button>
+            </div>
+
+            <!-- Content -->
+            <div id="art" class="tabcontent">
+                <h1 id="Illustrations">My 2D Illustrations:</h1>
+            
+                <div class="row">
+                    <div class="column">
+                        <img src="assets/Art/coloured 0.jpeg" draggable="false">
+                        <img src="assets/Art/coloured 6.jpeg" draggable="false">
+                        <img src="assets/Art/painting 2.jpeg" draggable="false">
+                        <img src="assets/Art/white bg 1.jpeg" draggable="false">
+                        <img src="assets/Art/notes 0.jpeg" draggable="false">
+                        <img src="assets/Art/notes 3.jpeg" draggable="false">
+                    </div>
+                    <div class="column">
+                        <img src="assets/Art/coloured 1.jpeg" draggable="false">
+                        <img src="assets/Art/coloured 4.jpeg" draggable="false">
+                        <img src="assets/Art/coloured 10.jpeg" draggable="false">
+                        <img src="assets/Art/painting 3.jpeg" draggable="false">
+                        <img src="assets/Art/white bg 2.jpeg" draggable="false">
+                        <img src="assets/Art/notes 1.jpeg" draggable="false">
+                        <img src="assets/Art/notes 4.jpeg" draggable="false">
+                    </div>
+                    <div class="column">
+                        <img src="assets/Art/coloured 2.jpeg" draggable="false">
+                        <img src="assets/Art/coloured 5.jpeg" draggable="false">
+                        <img src="assets/Art/coloured 8.jpeg" draggable="false">
+                        <img src="assets/Art/white bg 0.png" draggable="false">
+                        <img src="assets/Art/notes 2.jpeg" draggable="false">
+                        <img src="assets/Art/notes 5.jpeg" draggable="false">
+                    </div>
+                    <div class="column">
+                        <img src="assets/Art/coloured 3.jpeg" draggable="false">
+                        <img src="assets/Art/coloured 7.png" draggable="false">
+                        <img src="assets/Art/coloured 9.jpeg" draggable="false">
+                        <img src="assets/Art/painting.jpeg" draggable="false">
+                        <img src="assets/Art/white bg 3.png" draggable="false">
+                        <img src="assets/Art/white bg4.jpeg" draggable="false">
+                        <img src="assets/Art/notes 6.jpeg" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div id="animation" class="tabcontent">
+                <h1>My Blender Animations:</h1>
+                <h2>WIP</h2>
+                <h1>My Live2D Animations:</h1>
+                <h2>WIP</h2>
+            </div>
+
+            <div id="models" class="tabcontent">
+                <h1>My Vroid + Unity Models:</h1>
+                <h2>WIP</h2>
+            </div>
+
+            <div id="inspirations" class="tabcontent">
+                <h1>WIP</h1>
+            </div>
+
             <div class="contact">
-                <h1 class="project">See My Work at:</h1>
+                <h1 class="project">See All of My Work At:</h1>
                 <a href="https://www.instagram.com/tycelm/"  target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
@@ -46,5 +113,6 @@
                 </a>
             </div>
         </div>
+            
     </body>
 </html>
