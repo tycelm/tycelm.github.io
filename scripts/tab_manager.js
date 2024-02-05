@@ -29,7 +29,7 @@ function openTab(evt, tabName, type) {
     }
     
     // Get all elements with class="model-viewer" and hide them
-    tabcontent = document.getElementsByClassName("model-viewer");
+    tabcontent = document.getElementsByClassName("viewer");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
