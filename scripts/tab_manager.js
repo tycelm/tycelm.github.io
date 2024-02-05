@@ -5,7 +5,7 @@ function openTab(evt, tabName, type) {
   if (type == 'model')
   {
       // Get all elements with class="model-viewer" and hide them
-      tabcontent = document.getElementsByClassName("model-viewer");
+      tabcontent = document.getElementsByClassName("viewer");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
       }
@@ -24,6 +24,12 @@ function openTab(evt, tabName, type) {
   {
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    
+    // Get all elements with class="model-viewer" and hide them
+    tabcontent = document.getElementsByClassName("model-viewer");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
