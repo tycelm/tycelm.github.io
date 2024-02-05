@@ -99,7 +99,15 @@
                 <div class="m_flex_container">
                     <div class="m_flex_child">
                         <h2>Viewer:</h2>
-                        <model-viewer src="assets/Models/Mia V2.glb" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
+                        <div id="mia" class="model-viewer">
+                            <p>mia</p>
+                            <model-viewer src="assets/Models/Mia V2.glb" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
+                        </div>
+
+                        <div id="mei" class="model-viewer">
+                            <p>mei</p>
+                            <model-viewer src="assets/Models/mei.vrm" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
+                        </div>
                         
                         <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
                     </div>
@@ -107,8 +115,8 @@
                     <div class="m_flex_child">
                         <h2>Selector:</h2>
                         <div class="m_flex_child_container">
-                            <button>1</button>
-                            <button>2</button>
+                            <button class="model-select" onclick="openTab(event, 'mia', 'model')">Mia</button>
+                            <button class="model-select" onclick="openTab(event, 'mei', 'model')">Mei</button>
                             <button>3</button>
                             <button>4</button>
                             <button>5</button>
