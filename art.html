@@ -39,9 +39,9 @@
         <div class="content">
             <!-- Links -->
             <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'art')" id="defaultOpen">Illustrations</button>
+                <button class="tablinks" onclick="openTab(event, 'art')">Illustrations</button>
                 <button class="tablinks" onclick="openTab(event, 'animation')">Animations</button>
-                <button class="tablinks" onclick="openTab(event, 'models')">Models</button>
+                <button class="tablinks" onclick="openTab(event, 'models'); openTab(event, '', 'model');">Models</button>
                 <button class="tablinks" onclick="openTab(event, 'inspirations')">Inspirations</button>
             </div>
 
@@ -101,12 +101,12 @@
                         <h2>Viewer:</h2>
                         <div id="mia" class="viewer">
                             <p>mia</p>
-                            <model-viewer src="assets/Models/Mia V2.vrm" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
+                            <model-viewer src="assets/Models/Mia new.glb" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
                         </div>
 
                         <div id="mei" class="viewer">
                             <p>mei</p>
-                            <model-viewer src="assets/Models/mei.vrm" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
+                            <model-viewer src="assets/Models/mei.glb" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
                         </div>
                         
                         <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
