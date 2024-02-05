@@ -169,10 +169,15 @@ html, body {
 
 .viewer {
     display: block;
+    object-fit: contain;
+    height: 80vh;
+    width:auto;
 }
 
 model-viewer {
-    width: 500%;
+    width: 80vh;
+    height: 80vh;
+    background-color: #7d5893;
 }
 
 .contact{
