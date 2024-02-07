@@ -99,6 +99,10 @@
                 <div class="m_flex_container">
                     <div class="m_flex_child">
                         <h2>Viewer:</h2>
+
+                        <!-- TODO: Add more models -->
+                        <!-- TODO: Fix Mei model -->
+
                         <div id="mia" class="viewer">
                             <p>mia</p>
                             <model-viewer src="assets/Models/Mia new.glb" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
@@ -115,7 +119,9 @@
                     <div class="m_flex_child">
                         <h2>Selector:</h2>
                         <div class="m_flex_child_container">
-                            <button class="model-select" onclick="openTab(event, 'mia', 'model')">Mia</button>
+                            <button class="model-select" onclick="openTab(event, 'mia', 'model')">
+                                <img src="assets/Models/mia picture.jpeg">
+                            </button>
                             <button class="model-select" onclick="openTab(event, 'mei', 'model')">Mei</button>
                             <button>3</button>
                             <button>4</button>

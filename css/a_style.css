@@ -164,7 +164,17 @@ html, body {
 
 .m_flex_child button {
     flex: 33%;
-    height: 20px;
+    background-color: transparent;
+    border: transparent;
+    background-size:cover;
+}
+
+.m_flex_child button:hover {
+    background-color: #4d314d76;
+}
+
+.m_flex_child img {
+    width: 8vw;
 }
 
 .viewer {
