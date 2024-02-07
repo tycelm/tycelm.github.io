@@ -170,14 +170,14 @@ html, body {
 .viewer {
     display: block;
     object-fit: contain;
-    height: 80vh;
+    height: 100vh;
     width:auto;
 }
 
 model-viewer {
     width: 80vh;
     height: 80vh;
-    background-color: #7d5893;
+    background-color: #2d2035;
 }
 
 .contact{
