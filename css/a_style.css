@@ -4,6 +4,7 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1d161e;
     color: rgb(243, 231, 216);
+    scroll-behavior: smooth;
 }
 
 @keyframes in {
@@ -39,8 +40,6 @@ html, body {
     width: 45%;
     height: 15%;
     left: 50%;
-    animation-name: in;
-    animation-duration: 6s;
 }
 
 .skip:hover{
@@ -56,7 +55,7 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     animation-name: in;
-    animation-duration: 11s;
+    animation-duration: 13s;
 }
 
 .basic {
@@ -67,22 +66,33 @@ html, body {
 }   
 
 .info {
-    position: absolute;
-    top: 115%;
     text-align: right;
-    right: 3%;
+    padding-right: 30px;
+}
+
+.info button{
+    color: inherit;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+}
+
+.info button:hover {
+    cursor: pointer;
+    background-color: #271d29;
+    border-bottom: 1px solid white;
 }
 
 .tools{
-    position: absolute;
-    top: 160%;
     left: 3%;
 }
 
 .content {
-    position: absolute;
+    /* position: absolute; */
     color: rgb(243, 231, 216);
-    top: 220%;
+    /* top: 220%; */
     font-size: 20px;
     left: 3%;
     right: 3%;
@@ -128,12 +138,17 @@ html, body {
     transition: 0.3s;
     color: inherit;
     font-family: inherit;
+    width: 20vw;
 }
   
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #271d29;
-    font-weight: bold;
+    /* font-weight: bold; */
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    width: 22vw;
+    transition: width .3s;
 }
   
 /* Create an active/current tablink class */
