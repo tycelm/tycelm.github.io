@@ -33,8 +33,7 @@
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
-                <p>I am a self-taught <button onclick="document.getElementById('content').scrollIntoView(); openTab(event, 'art', 'tab')">digital illustrator</button>, 
-                    game maker, and <button onclick="document.getElementById('content').scrollIntoView(); openTab(event, 'animation', 'tab')">aspiring animator</button></p>
+                <p>I am a self-taught <button onclick="document.getElementById('content').scrollIntoView(); openTab(event, 'art', 'tab')">digital illustrator</button>, <form action="https://tycelm.itch.io/" target="_blank"><button type="submit">game maker</button> </form>, and <button onclick="document.getElementById('content').scrollIntoView(); openTab(event, 'animation', 'tab')">aspiring animator</button></p>
                 <p>with an interest in storytelling and music.</p>
                 <button onclick="change_page('index.html')">You can check out my games in my programming section!</button>
                 <p>&nbsp;</p>
@@ -127,12 +126,12 @@
                         <!-- TODO: Fix Mei model -->
 
                         <div id="mia" class="viewer">
-                            <p>mia</p>
+                            <p>Mia</p>
                             <model-viewer src="assets/Models/Mia new.glb" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
                         </div>
 
                         <div id="mei" class="viewer">
-                            <p>mei</p>
+                            <p>Mei</p>
                             <model-viewer src="assets/Models/mei.glb" camera-controls tone-mapping="commerce" shadow-intensity="0" exposure="1"> </model-viewer>
                         </div>
                         
@@ -145,8 +144,12 @@
                             <button class="model-select" onclick="openTab(event, 'mia', 'model')">
                                 <img src="assets/Models/mia picture.jpeg">
                             </button>
-                            <button class="model-select" onclick="openTab(event, 'mei', 'model')">Mei</button>
-                            <button>3</button>
+                            <button class="model-select" onclick="openTab(event, 'mei', 'model')">
+                                <img src="assets/Models/mei picture.png">
+                            </button>
+                            <button class="model-select" onclick="openTab(event, 'rin', 'model')">
+                                <img src="assets/Models/rin picture.png">
+                            </button>
                             <button>4</button>
                             <button>5</button>
                             <button>6</button>

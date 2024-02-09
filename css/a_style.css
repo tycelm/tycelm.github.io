@@ -71,9 +71,11 @@ html, body {
 }
 
 .info button{
+    font-family: inherit;
     color: inherit;
     font-size: 35px;
     font-weight: bold;
+    line-height: 0.4em;
     background-color: transparent;
     border: none;
     display: inline-block;
@@ -81,15 +83,26 @@ html, body {
 
 .info button:hover {
     cursor: pointer;
+    line-height: 0.8em;
+    border-bottom: 1px solid white;
+}
+
+.info form {
+    display: inline;
+}
+
+.info input:hover {
+    cursor: pointer;
     background-color: #271d29;
     border-bottom: 1px solid white;
 }
 
 .tools{
-    left: 3%;
+    padding-left: 30px;
 }
 
 .content {
+    padding-left: 30px;
     /* position: absolute; */
     color: rgb(243, 231, 216);
     /* top: 220%; */
@@ -154,7 +167,7 @@ html, body {
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: #130e13;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
   
   /* Style the tab content */
@@ -181,7 +194,7 @@ html, body {
     flex: 33%;
     background-color: transparent;
     border: transparent;
-    background-size:cover;
+    height: 15vw;
 }
 
 .m_flex_child button:hover {
@@ -189,7 +202,11 @@ html, body {
 }
 
 .m_flex_child img {
-    width: 8vw;
+    width: 14vw;
+}
+
+.m_flex_child img:hover {
+    opacity: 0.7;
 }
 
 .viewer {
