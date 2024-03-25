@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/s_style.css" style="height: 100%;"/>
+        <link rel="stylesheet" type="text/css" href="css/scroll.css" style="height: 100%;"/>
+        <script src="https://kit.fontawesome.com/001b83998f.js" crossorigin="anonymous"></script>
+        <script src="scripts/page_manager.js"></script>
+        <script src="scripts/tab_manager.js"></script>
+        <title>Store!</title> 
+        <meta charset="utf-8">
+        <meta name="description" content="&lt;model-viewer&gt; template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="container">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <h1 style="font-size: 105px;">Hello Early Birds</h1>
+            <h2>Enjoy a 50% off discount until 15 June 2024 😎</h2>
+            <h2 style="font-size: 45px;" id="timer"></h2>
+            <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jun 15, 2024 23:59:59").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("timer").innerHTML = days + " days and " + hours + " hours "
+            + minutes + " minutes and " + seconds + " seconds left!!!!";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED :(";
+            }
+            }, 1000);
+            </script>
+            <p>&nbsp;</p>
+            <h2>For all purchases reach me on <a href="https://www.instagram.com/tycelm/" target="_blank">Instagram</a> or <a href="https://twitter.com/tycelm"  target="_blank">Twitter</a></h2>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+        </div>
+
+        <div id="content" class="content">
+            <!-- Links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'shirts', 'tab')">Shirts</button>
+                <button class="tablinks" onclick="openTab(event, 'animation', 'tab')">Stickers</button>
+                <button class="tablinks" onclick="openTab(event, 'sizes', 'tab')">Sizes</button>
+            </div>
+
+            <!-- Content -->
+            <div id="shirts" class="tabcontent">
+                <h1 id="Illustrations">New Arrivals:</h1>
+                <h2>The Hong Kong Collection</h1>
+                <div class="row">
+                    <div class="column">
+                        <img src="assets/Shirts/Test.jpeg" onmouseover="this.src='';" onmouseout="this.src='assets/Shirts/Test.jpeg';" draggable="false">
+                        <h3>Name</h3>
+                        <p><s>Old</s> new</p>
+                        <img src="" onmouseover="this.src='';" onmouseout="this.src='';" draggable="false">
+                        <h3>Name</h3>
+                        <p>Price</p>
+                    </div>
+                    <div class="column">
+                        <img src="assets/Shirts/Test.jpeg" onmouseover="this.src='';" onmouseout="this.src='assets/Shirts/Test.jpeg';" draggable="false">
+                        <h3>Name</h3>
+                        <p>Price</p>
+                        <img src="" onmouseover="this.src='';" onmouseout="this.src='';" draggable="false">
+                        <h3>Name</h3>
+                        <p>Price</p>
+                    </div>
+                    <div class="column">
+                        <img src="assets/Shirts/Test.jpeg" onmouseover="this.src='';" onmouseout="this.src='assets/Shirts/Test.jpeg';" draggable="false">
+                        <h3>Name</h3>
+                        <p>Price</p>
+                        <img src="" onmouseover="this.src='';" onmouseout="this.src='';" draggable="false">
+                        <h3>Name</h3>
+                        <p>Price</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="animation" class="tabcontent">
+                <h1>WIP</h1>
+            </div>
+
+            <div id="sizes" class="tabcontent">
+                <h1>Shirts</h1>
+                <table>
+                    <tr>
+                        <th>Size</th>
+                        <th>Measurements</th>
+                    </tr>
+                    <tr>
+                        <td>XS</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="contact">
+                <h1 class="project">See All of My Work At:</h1>
+                <a href="https://tycelm.github.io/about"  target="_blank">
+                    <i class="fa fa-home"></i>
+                </a>
+                <a href="https://www.instagram.com/tycelm/"  target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@Tycelm"  target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://twitter.com/tycelm"  target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+            
+    </body>
+</html>

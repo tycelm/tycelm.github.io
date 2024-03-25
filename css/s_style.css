@@ -1,0 +1,264 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1d161e;
+    color: rgb(243, 231, 216);
+    scroll-behavior: smooth;
+}
+
+@keyframes in {
+    00% {top:100%; opacity: 0;}
+    90% {top:100%; opacity: 0;}
+    100% {opacity: 1;} 
+}
+
+
+#container {
+    color: rgb(243, 231, 216);
+    position: relative;
+    text-align: center;
+    user-select: none;
+}
+
+#container a {
+    color: rgb(243, 231, 216);
+}
+
+.bg {
+    margin: auto;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover;
+    background-color: rgb(36, 36, 36);
+} 
+
+.skip {
+    color: rgb(243, 231, 216);
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    width: 45%;
+    height: 15%;
+    left: 50%;
+}
+
+.skip:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    width: 50%;
+    transition: width .3s;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: in;
+    animation-duration: 13s;
+}
+
+.basic {
+    color: rgb(243, 231, 216);
+    font-size: 35px;
+    line-height: 0.4em;
+    font-weight: bold;
+}   
+
+.info {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.info button{
+    font-family: inherit;
+    color: inherit;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 0.4em;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+}
+
+.info button:hover {
+    cursor: pointer;
+    line-height: 0.8em;
+    border-bottom: 1px solid white;
+}
+
+.info form {
+    display: inline;
+}
+
+.info input:hover {
+    cursor: pointer;
+    background-color: #271d29;
+    border-bottom: 1px solid white;
+}
+
+.tools{
+    padding-left: 30px;
+}
+
+.content {
+    padding-left: 30px;
+    /* position: absolute; */
+    color: rgb(243, 231, 216);
+    /* top: 220%; */
+    font-size: 20px;
+    left: 3%;
+    right: 3%;
+}
+
+#Illustrations {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 4px; */
+}
+  
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 32%;
+    max-width: 32%;
+    padding: 0 5px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+}
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 50px;
+    transition: 0.3s;
+    color: inherit;
+    font-family: inherit;
+    width: 20vw;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #271d29;
+    /* font-weight: bold; */
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    width: 22vw;
+    transition: width .3s;
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #130e13;
+    /* font-weight: bold; */
+}
+  
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: #130e13;
+}
+
+.m_flex_container{
+    display: flex;
+}
+
+.m_flex_child {
+    flex: 1;
+}
+
+.m_flex_child_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.m_flex_child button {
+    flex: 33%;
+    background-color: transparent;
+    border: transparent;
+    height: 15vw;
+}
+
+.m_flex_child button:hover {
+    background-color: #4d314d76;
+}
+
+.m_flex_child img {
+    width: 14vw;
+}
+
+.m_flex_child img:hover {
+    opacity: 0.7;
+}
+
+#shirts {
+    text-align: center;
+}
+
+#shirts s {
+    color: rgb(103, 87, 118);
+}
+
+#sizes table {
+    width: 80%;
+    text-align: center;
+}
+
+#sizes tr:nth-child(odd) {
+    
+    background-color: #2b2031;
+}
+
+#sizes tr:nth-child(even) {
+    background-color: #412b4a;
+}
+
+.contact{
+    color: rgb(243, 231, 216);
+    /* background-color: #38243a; */
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
+
+.contact a{
+    color: rgb(243, 231, 216);
+    padding: 4em;
+    text-decoration: none
+}
+
+.contact a:hover{
+    color: rgb(247, 186, 255);
+}
+
+.project {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+i{
+    font-size: 100px;
+}
