@@ -26,6 +26,7 @@ function openTab(evt, tabName, type) {
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
+      tabcontent[i].style.maxHeight = null
     }
     
     // Get all elements with class="model-viewer" and hide them
@@ -43,5 +44,6 @@ function openTab(evt, tabName, type) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+    document.getElementById(tabName).style.maxHeight = document.getElementById(tabName).scrollHeight + "px";
   }
 }

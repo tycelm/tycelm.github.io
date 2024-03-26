@@ -9,7 +9,6 @@ html, body {
 
 @keyframes in {
     00% {top:100%; opacity: 0;}
-    90% {top:100%; opacity: 0;}
     100% {opacity: 1;} 
 }
 
@@ -54,12 +53,8 @@ html, body {
 }
 
 .title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     animation-name: in;
-    animation-duration: 13s;
+    animation-duration: 4s;
 }
 
 .basic {
@@ -130,7 +125,7 @@ html, body {
 .column {
     flex: 32%;
     max-width: 32%;
-    padding: 0 5px;
+    padding: 0 6px;
 }
   
 .column img {
@@ -179,6 +174,9 @@ html, body {
     display: none;
     padding: 6px 12px;
     background-color: #130e13;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 }
 
 .m_flex_container{
