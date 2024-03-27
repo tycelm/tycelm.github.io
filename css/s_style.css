@@ -101,17 +101,17 @@ html, body {
 }
 
 .content {
-    padding-left: 30px;
+    padding-left: 0.3vw;
     /* position: absolute; */
     color: rgb(243, 231, 216);
     /* top: 220%; */
-    font-size: 20px;
+    font-size: 2vw;
     left: 3%;
     right: 3%;
 }
 
 #Illustrations {
-    font-size: 100px;
+    font-size: 6vw;
     font-weight: bold;
 }
 
@@ -127,6 +127,15 @@ html, body {
     max-width: 32%;
     padding: 0 6px;
 }
+
+/* Responsive layout - makes a two column-layout instead of 3 columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 45%;
+      max-width: 45%;
+    }
+}
+
   
 .column img {
     margin-top: 8px;
@@ -137,6 +146,8 @@ html, body {
 /* Style the tab */
 .tab {
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
   
 /* Style the buttons that are used to open the tab content */
@@ -145,8 +156,8 @@ html, body {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    font-size: 50px;
+    padding: 0.3vw;
+    font-size: 5vw;
     transition: 0.3s;
     color: inherit;
     font-family: inherit;
@@ -177,6 +188,24 @@ html, body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
+}
+
+@media screen and (max-width: 800px) {
+    .tablinks {
+      animation: blinker 2s linear infinite;
+    }
+      
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #130e13;
+        font-weight: bold;
+    }
 }
 
 .m_flex_container{
@@ -220,8 +249,12 @@ html, body {
 }
 
 #sizes table {
-    width: 80%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    font-size: large;
+    font-family: inherit;
 }
 
 #sizes tr:nth-child(odd) {
@@ -253,10 +286,11 @@ html, body {
 }
 
 .project {
-    font-size: 100px;
+    font-size: 7vw;
     font-weight: bold;
 }
 
 i{
     font-size: 100px;
+    padding: 4px;
 }
