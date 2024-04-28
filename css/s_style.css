@@ -161,7 +161,7 @@ html, body {
     transition: 0.3s;
     color: inherit;
     font-family: inherit;
-    width: 20vw;
+    width: 22vw;
 }
   
 /* Change background color of buttons on hover */
@@ -170,7 +170,7 @@ html, body {
     /* font-weight: bold; */
     cursor: pointer;
     border-bottom: 1px solid white;
-    width: 22vw;
+    width: 25vw;
     transition: width .3s;
 }
   
