@@ -10,7 +10,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body onload="document.getElementById('defaultOpen').click();">
         <div id="container" class="title">
             <p>&nbsp;</p>
             <p>&nbsp;</p>
@@ -33,7 +33,7 @@
         <div id="content" class="content">
             <!-- Links -->
             <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Keychains', 'tab')" id="noway">Keychains</button>
+                <button class="tablinks active" onclick="openTab(event, 'Keychains', 'tab')" id="defaultOpen">Keychains</button>
                 <!-- <button class="tablinks" onclick="openTab(event, 'animation', 'tab')">Stickers</button> -->
                 <button class="tablinks" onclick="openTab(event, 'sizes', 'tab')">FAQ</button>
             </div>
