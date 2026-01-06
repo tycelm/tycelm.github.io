@@ -26,6 +26,7 @@ html, body {
 }
 
 .prog{
+    padding: 30% 20% ;
     border: none;
     color: rgb(85, 255, 111);
     text-align: center;
@@ -45,6 +46,7 @@ html, body {
 }
 
 .art{
+    padding: 30% 20% ;
     border: none;
     background-color: transparent;
     color: rgb(221, 255, 128);
